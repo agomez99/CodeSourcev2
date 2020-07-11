@@ -9,7 +9,6 @@ import { useDarkMode } from "../src/Components/DarkMode";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 import BlogsPage from "./Pages/BlogsPage";
-import TutorialPage from "./Pages/TutorialPage";
 import MainNavbar from "./Components/Navbar/Navbar";
 import Post from "./Components/Post/Post";
 import NoPage from "./Pages/NoPage/NoPage";
@@ -46,8 +45,7 @@ function App() {
 
             <Route exact path="/blog" component={BlogsPage} />
             <Route path="/blog/:slug" render={Post} />
-            <Route exact path="/tutorial-page" component={TutorialPage} />
-            <Route exact path="/video" component={Search}/>
+            <Route exact path="/tutorial-page" component={Search}/>
             <Route exact path="/about" component={About}/>
             <Route component={NoPage} />
           </Switch>
