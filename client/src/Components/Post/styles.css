@@ -1,0 +1,90 @@
+.blog-header{
+    font-family: 'Roboto', sans-serif;
+
+}
+.post {
+    text-align: left;
+    margin-left: 16%;
+    margin-right: 16%;
+    margin-top: 5%;
+    background-color: white;
+    padding: 20px;
+    font-size: 16px;
+    border: 1px solid #9e9e9e85;
+    font-family: 'Roboto', sans-serif;
+
+}
+.post-body{
+    margin-bottom:10%;
+    margin-top:10%;
+    margin-left:5%;
+    margin-right:5%;
+    margin-bottom: 20px;
+
+}
+
+.author-image {
+    height: 100px;
+}
+
+.author {
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.p-image {
+    max-height: 100%;
+    max-width: 100%;
+    display: block;
+    float: left;
+    padding:10px;
+    height: auto;
+    width:auto;
+}
+
+.p-sumamry {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.p-title {
+    text-align: center;
+}
+
+.post-snippet {
+    margin-top: 5%;
+    margin-left: 23%;
+    margin-right: 23%;
+    border: 2px solid #302c2c85;
+    display: inline-block;
+    background-color: white;
+    padding:10px;
+    max-width:auto;
+    min-width:1000px;
+    min-height:380px;
+    max-height:auto;
+    height:auto;
+    width: 400px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.article-container {
+    margin-left: 23%;
+    margin-right: 23%;
+    margin-top: 3%;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10%;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.share-btn{
+    float:right;
+    margin-right:50px;
+}
+
