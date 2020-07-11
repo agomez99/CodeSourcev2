@@ -4,8 +4,11 @@ import YTSearch from 'youtube-api-search';
 import SearchBar from './search_bar';
 import VideoList from './video_list';
 import VideoDetail from './video_detail';
+import Button from '@material-ui/core/Button';
 import './style.css';
-const API_KEY = 'AIzaSyD6AdNi6Pi5VIy2sk9n9nzrjFwSS0T_47Q';
+require("dotenv").config();
+
+const API_KEY = (process.env.REACT_APP_API_KEY);
 
 //  Create a new component.
 class Search extends Component  {
@@ -17,7 +20,7 @@ class Search extends Component  {
       selectedVideo: null
     };
 
-    this.videoSearch('React JS');
+    this.videoSearch('ReactJS');
   }
 
   videoSearch(term) {
@@ -35,13 +38,57 @@ class Search extends Component  {
 
     return (
       <div>
+        <div className="flex-container">
+          <Button
+            type="button"
+            className="react-Button"
+            value="react"
+            onClick={(e) => videoSearch("HTML tutorials")}
+          >
+            HTML
+          </Button>
+          <Button
+            type="button"
+            className="react-Button"
+            value="react"
+            onClick={(e) => videoSearch("CSS tutorials")}
+          >
+            CSS
+          </Button>
+          <Button
+            type="button"
+            className="react-Button"
+            value="react"
+            onClick={(e) => videoSearch("Express.js tutorials")}
+          >
+            Express
+          </Button>
+          <Button
+            type="button"
+            className="react-Button"
+            value="react"
+            onClick={(e) => videoSearch("Mongo.js tutorials")}
+          >
+            Mongo
+          </Button>
+          <Button
+            type="button"
+            className="react-Button"
+            value="react"
+            onClick={(e) => videoSearch("Javascript.js tutorials")}
+          >
+            Javascript
+          </Button>
+        </div>
+
         <SearchBar onSearchTermChange={videoSearch} />
-        <VideoDetail video={this.state.selectedVideo}/>
+        <VideoDetail video={this.state.selectedVideo} />
         <div className="videoList">
-        <VideoList 
-          onVideoSelect={selectedVideo => this.setState({selectedVideo})}
-          videos={this.state.videos} />
-          </div>
+          <VideoList
+            onVideoSelect={(selectedVideo) => this.setState({ selectedVideo })}
+            videos={this.state.videos}
+          />
+        </div>
       </div>
     );
   }
