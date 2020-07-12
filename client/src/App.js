@@ -4,7 +4,6 @@ import { lightTheme, darkTheme } from "../src/Components/theme";
 import { GlobalStyles } from "../src/Components/global";
 import Toggle from "../src/Components/Toggle";
 import { useDarkMode } from "../src/Components/DarkMode";
-//import FormControlLabel from '@material-ui/core/FormControlLabel';
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";

@@ -5,13 +5,30 @@ import SearchBar from './search_bar';
 import VideoList from './video_list';
 import VideoDetail from './video_detail';
 import Button from '@material-ui/core/Button';
+import mongo from './icons/mongodb.png'
+import js from './icons/js.png'
+import angular from './icons/angular.png'
+import react from './icons/react.png'
+import vue from './icons/vue.png'
+import html from './icons/html.png'
+import css from './icons/css.png'
+import ts from './icons/TS.png'
 import './style.css';
+
 require("dotenv").config();
 
-const API_KEY = (process.env.REACT_APP_API_KEY);
+const API_KEY = "AIzaSyCucQzliy9NBYQDLoE_0rnQWL26jd1464o";
 
-//  Create a new component.
+
+
+
+
+
+
+
+
 class Search extends Component  {
+  
   constructor(props) {
     super(props);
 
@@ -38,12 +55,38 @@ class Search extends Component  {
 
     return (
       <div>
-        <div className="flex-container">
+        <div className="btn-container">
+          <label>Choose a button</label>
+          <br></br>
+        <Button
+            type="button"
+            value="react"
+            onClick={(e) => videoSearch("Javascript tutorials")}
+            startIcon={<img src={js} alt=""/>}
+            style={{
+              borderRadius: 35,
+              width: '180px',
+              backgroundColor: "#ffffff",
+              padding: "10px 5px",
+              fontSize: "16px"
+          }}
+          variant="contained"
+
+          >
+            Javascript
+          </Button>
           <Button
             type="button"
-            className="react-Button"
             value="react"
             onClick={(e) => videoSearch("HTML tutorials")}
+            startIcon={<img src={html} alt=""/>}
+            style={{
+              borderRadius: 35,
+              backgroundColor: "#ffffff",
+              padding: "10px 20px",
+              fontSize: "18px"
+          }}
+              variant="contained"
           >
             HTML
           </Button>
@@ -52,33 +95,108 @@ class Search extends Component  {
             className="react-Button"
             value="react"
             onClick={(e) => videoSearch("CSS tutorials")}
+            startIcon={<img src={css} alt=""/>}
+            style={{
+              borderRadius: 35,
+              backgroundColor: "#ffffff",
+              padding: "10px 40px",
+              fontSize: "18px"
+          }}
+          variant="contained"
           >
             CSS
           </Button>
           <Button
             type="button"
-            className="react-Button"
+            className="cat-btn"
             value="react"
-            onClick={(e) => videoSearch("Express.js tutorials")}
+            onClick={(e) => videoSearch("React tutorials")}
+            startIcon={<img src={react} alt=""/>}
+            style={{
+              borderRadius: 35,
+              backgroundColor: "#ffffff",
+              padding: "10px 20px",
+              fontSize: "18px"
+          }}
+          variant="contained"
           >
-            Express
+
+          React
+          </Button>
+          <Button
+            type="button"
+            className="cat-btn"
+            value="react"
+            onClick={(e) => videoSearch("AngularJS tutorials")}
+            startIcon={<img src={angular} alt=""/>}
+            style={{
+              borderRadius: 35,
+              backgroundColor: "#ffffff",
+              padding: "10px 20px",
+              fontSize: "18px"
+          }}
+          variant="contained"
+          >
+
+           Angular
           </Button>
           <Button
             type="button"
             className="react-Button"
             value="react"
-            onClick={(e) => videoSearch("Mongo.js tutorials")}
+            onClick={(e) => videoSearch("MongoDB tutorials")}
+            startIcon={<img src={mongo} alt=""/>}
+            style={{
+              borderRadius: 35,
+              backgroundColor: "#ffffff",
+              padding: "10px 20px",
+              fontSize: "18px"
+          }}
+          variant="contained"
+          
+
           >
-            Mongo
+            
+          Mongo DB
           </Button>
           <Button
             type="button"
             className="react-Button"
             value="react"
-            onClick={(e) => videoSearch("Javascript.js tutorials")}
+            onClick={(e) => videoSearch("Vuejs tutorials")}
+            startIcon={<img src={vue} alt=""/>}
+            style={{
+              borderRadius: 35,
+              backgroundColor: "#ffffff",
+              padding: "10px 20px",
+              fontSize: "18px"
+          }}
+          variant="contained"
+
           >
-            Javascript
+            Vue
           </Button>
+          <Button
+            type="button"
+            className="react-Button"
+            value="react"
+            onClick={(e) => videoSearch("typescript tutorials")}
+            startIcon={<img src={ts} alt=""/>}
+            style={{
+              borderRadius: 35,
+              backgroundColor: "#ffffff",
+              padding: "10px 20px",
+              fontSize: "16px",
+              textTransform: "uppercase",
+
+
+          }}
+          variant="contained"
+
+          >
+            Typescript
+          </Button>
+          
         </div>
 
         <SearchBar onSearchTermChange={videoSearch} />
