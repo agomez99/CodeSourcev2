@@ -182,6 +182,8 @@ input:focus{
 height:200px;
 }
 
-.cat-btn{
-  color:white;
+.btn-container{
+    margin-left: 15%;
+    margin-right:auto;
+    padding:20px;
 }

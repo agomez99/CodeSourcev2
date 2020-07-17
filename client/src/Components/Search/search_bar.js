@@ -25,9 +25,6 @@ class SearchBar extends Component {
       this.props.onSearchTermChange(term);
     }
 
-  // onInputChange(event) {
-  //   console.log(event.target.value);
-  // }
 }
 
 export default SearchBar;

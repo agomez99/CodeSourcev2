@@ -59,6 +59,8 @@ class Search extends Component  {
           <label>Choose a button</label>
           <br></br>
         <Button
+            variant="outlined" 
+            color="primary"
             type="button"
             value="react"
             onClick={(e) => videoSearch("Javascript tutorials")}
@@ -67,15 +69,16 @@ class Search extends Component  {
               borderRadius: 35,
               width: '180px',
               backgroundColor: "#ffffff",
-              padding: "10px 5px",
+              padding: "5px 5px",
               fontSize: "16px"
           }}
-          variant="contained"
 
           >
             Javascript
           </Button>
           <Button
+               variant="outlined" 
+            color="primary"
             type="button"
             value="react"
             onClick={(e) => videoSearch("HTML tutorials")}
@@ -83,30 +86,34 @@ class Search extends Component  {
             style={{
               borderRadius: 35,
               backgroundColor: "#ffffff",
-              padding: "10px 20px",
+              padding: "8px 15px",
               fontSize: "18px"
           }}
-              variant="contained"
           >
             HTML
           </Button>
           <Button
-            type="button"
-            className="react-Button"
+               variant="outlined" 
+            color="primary"
+           type="button"
+            className="react-button"
             value="react"
             onClick={(e) => videoSearch("CSS tutorials")}
             startIcon={<img src={css} alt=""/>}
             style={{
               borderRadius: 35,
               backgroundColor: "#ffffff",
-              padding: "10px 40px",
+              padding: "10px 20px",
               fontSize: "18px"
           }}
-          variant="contained"
+          
+
           >
             CSS
           </Button>
           <Button
+               variant="outlined" 
+            color="primary"
             type="button"
             className="cat-btn"
             value="react"
@@ -115,17 +122,19 @@ class Search extends Component  {
             style={{
               borderRadius: 35,
               backgroundColor: "#ffffff",
-              padding: "10px 20px",
+              padding: "10px 15px",
               fontSize: "18px"
           }}
-          variant="contained"
           >
 
           React
           </Button>
           <Button
+            variant="outlined" 
+            color="primary"
             type="button"
-            className="cat-btn"
+
+            className="react-button"
             value="react"
             onClick={(e) => videoSearch("AngularJS tutorials")}
             startIcon={<img src={angular} alt=""/>}
@@ -135,14 +144,15 @@ class Search extends Component  {
               padding: "10px 20px",
               fontSize: "18px"
           }}
-          variant="contained"
           >
 
            Angular
           </Button>
           <Button
+               variant="outlined" 
+            color="primary"
             type="button"
-            className="react-Button"
+            className="react-button"
             value="react"
             onClick={(e) => videoSearch("MongoDB tutorials")}
             startIcon={<img src={mongo} alt=""/>}
@@ -152,18 +162,18 @@ class Search extends Component  {
               padding: "10px 20px",
               fontSize: "18px"
           }}
-          variant="contained"
           
 
           >
-            
-          Mongo DB
+          Mongo
           </Button>
           <Button
-            type="button"
-            className="react-Button"
+               variant="outlined" 
+            color="primary"
+           type="button"
+            className="react-button"
             value="react"
-            onClick={(e) => videoSearch("Vuejs tutorials")}
+            onClick={(e) => videoSearch("VueJS tutorials")}
             startIcon={<img src={vue} alt=""/>}
             style={{
               borderRadius: 35,
@@ -171,27 +181,27 @@ class Search extends Component  {
               padding: "10px 20px",
               fontSize: "18px"
           }}
-          variant="contained"
+          
 
           >
-            Vue
+          Vue
           </Button>
           <Button
-            type="button"
-            className="react-Button"
+               variant="outlined" 
+            color="primary"
+           type="button"
+            className="react-button"
             value="react"
-            onClick={(e) => videoSearch("typescript tutorials")}
+            onClick={(e) => videoSearch("Typescript tutorials")}
             startIcon={<img src={ts} alt=""/>}
             style={{
               borderRadius: 35,
               backgroundColor: "#ffffff",
               padding: "10px 20px",
-              fontSize: "16px",
-              textTransform: "uppercase",
-
-
+              fontSize: "18px"
           }}
-          variant="contained"
+          
+
 
           >
             Typescript
