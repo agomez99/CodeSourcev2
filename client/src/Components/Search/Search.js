@@ -69,7 +69,7 @@ class Search extends Component  {
               borderRadius: 35,
               width: '180px',
               backgroundColor: "#ffffff",
-              padding: "5px 5px",
+              padding: "8px 5px",
               fontSize: "16px"
           }}
 
