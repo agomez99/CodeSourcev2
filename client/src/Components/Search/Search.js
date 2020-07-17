@@ -17,7 +17,7 @@ import './style.css';
 
 require("dotenv").config();
 
-const API_KEY = "AIzaSyCucQzliy9NBYQDLoE_0rnQWL26jd1464o";
+const API_KEY = process.env.REACT_APP_API_KEY
 
 
 
