@@ -18,7 +18,9 @@ const useStyles = makeStyles((theme) => ({
     height: 650,
     margin: 100,
     padding: '0 30px',
-    paddingTop: 50
+    paddingTop: 50,
+    marginLeft: 450,
+    marginRight: 450,
 
   },
   button: {
@@ -37,6 +39,7 @@ const useStyles = makeStyles((theme) => ({
   container: {
     padding: '10px',
 
+
   },
   email: {
     height: 50,
@@ -54,13 +57,13 @@ export default function CenteredGrid() {
     <div className="{classes.root}">
       <Grid container spacing={0}>
 
-        <Grid classNAme={classes.grid}item xs={12}>
+        <Grid className={classes.grid}item xs={12}>
           <Paper className={classes.paper}><h3>Austine Gomez</h3>
             <Container className={classes.container}>
               <Avatar alt="Austine Gomez" className={classes.avatar} src="https://media-exp1.licdn.com/dms/image/C4E03AQEOKRTNFRMwmg/profile-displayphoto-shrink_400_400/0?e=1599696000&v=beta&t=e_RtEQeRMgaTpJPSpbBHAS1eSylA0VEJgDqmwHTV6fs" />
             </Container>
             <Grid>
-              <label>Back End</label>
+              <label>Developer</label>
               <hr></hr>
               <Button variant="outlined" className={classes.button} href="https://www.linkedin.com/in/austine-gomez/">
                 <Linkedin className={classes.icon} /> Linkedin
