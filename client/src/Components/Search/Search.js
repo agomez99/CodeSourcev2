@@ -55,9 +55,8 @@ class Search extends Component  {
 
     return (
       <div>
+         <h3 className="button-label">Choose a button for a tutorial or use the search!</h3>
         <div className="btn-container">
-          <label>Choose a button</label>
-          <br></br>
         <Button
             variant="outlined" 
             color="primary"

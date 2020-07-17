@@ -187,3 +187,11 @@ height:200px;
     margin-right:auto;
     padding:20px;
 }
+.button-label{
+    text-align: center;
+    color:black;
+    font-size: 25px;
+    margin-left:33.3%;
+    margin-right:33.3%;
+    margin-top:5%;
+}
