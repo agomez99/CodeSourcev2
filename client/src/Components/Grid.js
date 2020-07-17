@@ -54,7 +54,7 @@ export default function CenteredGrid() {
     <div className="{classes.root}">
       <Grid container spacing={0}>
 
-        <Grid classNAme={classes.grid}item xs={6}>
+        <Grid classNAme={classes.grid}item xs={12}>
           <Paper className={classes.paper}><h3>Austine Gomez</h3>
             <Container className={classes.container}>
               <Avatar alt="Austine Gomez" className={classes.avatar} src="https://media-exp1.licdn.com/dms/image/C4E03AQEOKRTNFRMwmg/profile-displayphoto-shrink_400_400/0?e=1599696000&v=beta&t=e_RtEQeRMgaTpJPSpbBHAS1eSylA0VEJgDqmwHTV6fs" />
@@ -77,25 +77,6 @@ export default function CenteredGrid() {
           </Paper>
         </Grid>
 
-        <Grid item xs={6}>
-          <Paper className={classes.paper}><h3>Jiovanie Martinez</h3>
-            <Container className={classes.container}>
-              <Avatar alt="Jiovanie Martinez" className={classes.avatar} src="https://media-exp1.licdn.com/dms/image/C4E03AQEzfl5kYgJEjA/profile-displayphoto-shrink_400_400/0?e=1599696000&v=beta&t=P65VeLGF7SHglgxjXdlWv7soh6QMzyyVF9Fh3EqWTto" />
-            </Container>
-            <Grid>
-              <label>Front End</label>
-              <hr></hr>
-              <Button variant="outlined" className={classes.button} href="https://www.linkedin.com/in/jiovanie-martinez-606b52196">
-                <Linkedin className={classes.icon} /> Linkedin
-              </Button>
-            </Grid>
-            <Button variant="outlined" className={classes.button} href="mailto:jiovaniemartinez@gmail.com">
-              <EmailIcon className={classes.email} ></EmailIcon>
-            </Button>
-
-          </Paper>
-
-        </Grid>
 
       </Grid>
     </div>
