@@ -45,6 +45,9 @@ export const GlobalStyles = createGlobalStyle
       background: ${({ theme }) => theme.body};
       color: ${({ theme }) => theme.text};
     }
+    .button-label{
+      color: ${({ theme }) => theme.text};
+    }
 
-  }
+  
   `

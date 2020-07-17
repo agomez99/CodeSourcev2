@@ -13,6 +13,8 @@ import vue from './icons/vue.png'
 import html from './icons/html.png'
 import css from './icons/css.png'
 import ts from './icons/TS.png'
+import { GlobalStyles } from '../../Components/global';
+
 import './style.css';
 
 require("dotenv").config();
@@ -55,6 +57,7 @@ class Search extends Component  {
 
     return (
       <div>
+      <GlobalStyles />
          <h3 className="button-label">Choose a button for a tutorial or use the search!</h3>
         <div className="btn-container">
         <Button
