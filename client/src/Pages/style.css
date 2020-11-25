@@ -63,3 +63,10 @@ h1 {
   text-align:center;
   
 }
+
+.aboutlogo{
+  display: flex;
+  margin-bottom: 50%;
+  margin-top: 30%;
+  margin-left:25%;
+}
