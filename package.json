@@ -8,6 +8,7 @@
     "npm": "6.13.6"
   },
   "scripts": {
+    "test:debug": "react-scripts --inspect-brk test --runInBand --no-cache",
     "client-install": "npm install --prefix client",
     "start": "node server.js",
     "client": "npm start --prefix client",
