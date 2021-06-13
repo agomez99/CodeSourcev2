@@ -26,6 +26,7 @@ li a {
 .sm-hide {
   color: white;
   font-size: 20px;
+  padding:5px 5px;
 }
 
 .auth {
@@ -51,4 +52,44 @@ li a {
   display: flex;
   float: left;
   margin-right: 5px;
+}
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+
+    div.Typist{
+      font-size: 13px;
+    }
+    li{
+      font-size: 15px;
+      padding: 0
+    }
+    .user{
+      font-size: 15px;
+    }
+    span{
+      font-size:15px;
+    }
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+
 }

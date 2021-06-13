@@ -2,12 +2,10 @@ import React from 'react';
 import moment from 'moment';
 import {Link }from 'react-router-dom';
 import Chip from '@material-ui/core/Chip';
-
 import '../../App.css';
 
-
 const PostSnippet = props => {
-  const data = props;
+const data = props;
 
   return (
     <div className="post-snippet">
@@ -20,18 +18,18 @@ const PostSnippet = props => {
           {props.title}
         </Link>
       </h3>
-      <p className="p-summary">{props.summary}</p>
+      <p className="p-summary">{props.summary.substring(1, 100)}</p>
       <div>
       <Chip 
-            label={data.tags[0].name}
+            label={props.tags[0].name}
             color="primary"
           />
           <Chip 
-            label={data.tags[1].name}
+            label={props.tags[1].name}
             color="primary"
           />
           <Chip 
-            label={data.tags[2].name}
+            label={props.tags[2].name}
             color="primary"
           />
         <div>By <strong>{props.author.first_name} {props.author.last_name}</strong></div>

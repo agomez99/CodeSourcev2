@@ -19,7 +19,7 @@
     /*padding: 30px 48px 30px 22px;*/
     background: none;
     border: 0;
-    font-size: 36px;
+    font-size:26px;
     height: auto;
     line-height: 48px;
     caret-color: #fff;
@@ -184,12 +184,12 @@ height:200px;
 
 .btn-container{
     margin-left: 15%;
-    margin-right:auto;
+    margin-right:15%;
     padding:20px;
 }
 .button-label{
     text-align: center;
-    font-size: 25px;
+    font-size:1rem;
     margin-left:33.3%;
     margin-right:33.3%;
     margin-top:5%;

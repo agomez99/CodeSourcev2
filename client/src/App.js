@@ -40,9 +40,9 @@ function App() {
           <Toggle theme={theme} toggleTheme={toggleTheme} />
           <Switch>
             <Route exact path="/register" component={Register} />
-            <Route exact path="/" component={Login} />
+            <Route exact path="/login" component={Login} />
 
-            <Route exact path="/blog" component={BlogsPage} />
+            <Route exact path="/" component={BlogsPage} />
             <Route path="/blog/:slug" render={Post} />
             <Route exact path="/tutorial-page" component={Search}/>
             <Route exact path="/about" component={About}/>

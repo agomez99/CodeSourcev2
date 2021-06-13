@@ -62,7 +62,7 @@ const  Login = (props)=>{
 
   useEffect(() => {
     if (userAuth) {
-      props.history.push("/blog");
+      props.history.push("/");
     }
   }, [userAuth, props.history]);
 

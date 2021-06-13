@@ -2,14 +2,14 @@ import React, { useContext, Fragment } from "react";
 import { Link } from "react-router-dom";
 import AuthContext from "../../context/authContext/authContext";
 import image2 from "./red.png";
-import { makeStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import Typist from 'react-typist';
-import PersonAddIcon from '@material-ui/icons/PersonAdd';
-import PersonIcon from '@material-ui/icons/Person';
-import ExitToAppIcon from '@material-ui/icons/ExitToApp';
+import { makeStyles } from "@material-ui/core/styles";
+import AppBar from "@material-ui/core/AppBar";
+import Toolbar from "@material-ui/core/Toolbar";
+import Typography from "@material-ui/core/Typography";
+import Typist from "react-typist";
+import PersonAddIcon from "@material-ui/icons/PersonAdd";
+import PersonIcon from "@material-ui/icons/Person";
+import ExitToAppIcon from "@material-ui/icons/ExitToApp";
 
 import "./style.css";
 
@@ -23,14 +23,10 @@ const useStyles = makeStyles((theme) => ({
   title: {
     flexGrow: 1,
   },
-
-
 }));
 
 const MainNavbar = () => {
-
   const classes = useStyles();
-
 
   const { logout, clearErrors, userAuth, user } = useContext(AuthContext);
   const handleLogout = () => {
@@ -42,7 +38,7 @@ const MainNavbar = () => {
     <Fragment>
       <ul>
         <li>
-          <Link to="/blog">Blogs</Link>
+          <Link to="/">Blogs</Link>
         </li>
         <span className="sm-hide">|</span>
         <li>
@@ -53,14 +49,12 @@ const MainNavbar = () => {
           <Link to="/about">About</Link>
         </li>
         <li className="user"> Hello, {user && user.name} </li>
-        <PersonIcon fontSize="large" />
-
+        <PersonIcon fontSize="small" />
         <span className="sm-hide">|</span>
-
         <li>
           <a href="/" onClick={handleLogout}>
-            <span className="sm-hide">Logout</span>
-            <ExitToAppIcon fontSize="large" />
+            <span >Logout</span>
+            <ExitToAppIcon fontSize="medium" />
           </a>
         </li>
       </ul>
@@ -76,7 +70,7 @@ const MainNavbar = () => {
         </li>
         <span className="sm-hide">|</span>
         <li>
-          <Link to="/">Login</Link>
+          <Link to="/login">Login</Link>
           <PersonIcon fontSize="large" />
         </li>
       </ul>
@@ -84,7 +78,6 @@ const MainNavbar = () => {
   );
 
   return (
-
     <div>
       <AppBar position="static" className="app-bar">
         <Toolbar>
@@ -92,10 +85,23 @@ const MainNavbar = () => {
           <Typography variant="h4" className={classes.title}>
             <Typist>
               <Typist.Delay ms={1000} />
-      CodeSource
-      </Typist>
+              CodeSource
+            </Typist>
           </Typography>
-          <div className="auth">{userAuth ? userLinks : authLinks}</div>
+          <ul>
+        <li>
+          <Link to="/">Blogs</Link>
+        </li>
+        <span className="sm-hide">|</span>
+        <li>
+          <Link to="/tutorial-page">Tutorials</Link>
+        </li>
+        <span className="sm-hide">|</span>
+        <li>
+          <Link to="/about">About</Link>
+        </li>
+          </ul>
+          {/* <div className="auth">{userAuth ? userLinks : authLinks}</div> */}
         </Toolbar>
       </AppBar>
     </div>

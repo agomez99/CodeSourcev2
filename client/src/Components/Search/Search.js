@@ -21,14 +21,6 @@ require("dotenv").config();
 
 const API_KEY = process.env.REACT_APP_API_KEY
 
-
-
-
-
-
-
-
-
 class Search extends Component  {
   
   constructor(props) {
@@ -66,12 +58,12 @@ class Search extends Component  {
             type="button"
             value="react"
             onClick={(e) => videoSearch("Javascript tutorials")}
-            startIcon={<img src={js} alt=""/>}
+            startIcon={<img src={js} alt="" style={{height:"20px"}}/>}
             style={{
-              borderRadius: 35,
+              borderRadius: 35, 
               width: '180px',
               backgroundColor: "#ffffff",
-              padding: "8px 5px",
+              padding: "5px 15px",
               fontSize: "16px"
           }}
 
@@ -84,7 +76,7 @@ class Search extends Component  {
             type="button"
             value="react"
             onClick={(e) => videoSearch("HTML tutorials")}
-            startIcon={<img src={html} alt=""/>}
+            startIcon={<img src={html} alt=""  style={{height:"20px"}}/>}
             style={{
               borderRadius: 35,
               backgroundColor: "#ffffff",
@@ -101,11 +93,11 @@ class Search extends Component  {
             className="react-button"
             value="react"
             onClick={(e) => videoSearch("CSS tutorials")}
-            startIcon={<img src={css} alt=""/>}
+            startIcon={<img src={css} alt=""  style={{height:"20px"}}/>}
             style={{
               borderRadius: 35,
               backgroundColor: "#ffffff",
-              padding: "10px 20px",
+              padding: "8px 15px",
               fontSize: "18px"
           }}
           
@@ -120,11 +112,11 @@ class Search extends Component  {
             className="cat-btn"
             value="react"
             onClick={(e) => videoSearch("React tutorials")}
-            startIcon={<img src={react} alt=""/>}
+            startIcon={<img src={react} alt=""  style={{height:"20px"}}/>}
             style={{
               borderRadius: 35,
               backgroundColor: "#ffffff",
-              padding: "10px 15px",
+              padding: "8px 15px",
               fontSize: "18px"
           }}
           >
@@ -139,11 +131,11 @@ class Search extends Component  {
             className="react-button"
             value="react"
             onClick={(e) => videoSearch("AngularJS tutorials")}
-            startIcon={<img src={angular} alt=""/>}
+            startIcon={<img src={angular} alt=""  style={{height:"20px"}} />}
             style={{
               borderRadius: 35,
               backgroundColor: "#ffffff",
-              padding: "10px 20px",
+              padding: "5px 15px",
               fontSize: "18px"
           }}
           >
@@ -157,11 +149,11 @@ class Search extends Component  {
             className="react-button"
             value="react"
             onClick={(e) => videoSearch("MongoDB tutorials")}
-            startIcon={<img src={mongo} alt=""/>}
+            startIcon={<img src={mongo} alt=""  style={{height:"20px"}} />}
             style={{
               borderRadius: 35,
               backgroundColor: "#ffffff",
-              padding: "10px 20px",
+              padding: "8px 15px",
               fontSize: "18px"
           }}
           
@@ -176,11 +168,11 @@ class Search extends Component  {
             className="react-button"
             value="react"
             onClick={(e) => videoSearch("VueJS tutorials")}
-            startIcon={<img src={vue} alt=""/>}
+            startIcon={<img src={vue} alt="" style={{height:"20px"}} />}
             style={{
               borderRadius: 35,
               backgroundColor: "#ffffff",
-              padding: "10px 20px",
+              padding: "8px 15px",
               fontSize: "18px"
           }}
           
@@ -195,11 +187,11 @@ class Search extends Component  {
             className="react-button"
             value="react"
             onClick={(e) => videoSearch("Typescript tutorials")}
-            startIcon={<img src={ts} alt=""/>}
+            startIcon={<img src={ts} alt="" style={{height:"20px"}} />}
             style={{
               borderRadius: 35,
               backgroundColor: "#ffffff",
-              padding: "10px 20px",
+              padding: "10px 15px",
               fontSize: "18px"
           }}
           
