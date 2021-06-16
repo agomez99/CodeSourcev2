@@ -20,14 +20,26 @@ import "./styles.css";
 
 const Post = (props) => {
   const data = props.location.state;
+
+
+  const chip = data.tags.map((tag) =>
+  <div key={tag.id}>
+    <Chip color="primary" label={tag.name} />
+  </div>
+);
   return (
     <div>
     <div className="post">
       <h1 className="p-title">{data.title}</h1>
       <div className="post-body" dangerouslySetInnerHTML={{ __html: data.body }} />
-      <Chip color="primary" label={data.tags[0].name} />
-      <Chip color="primary" label={data.tags[1].name} />
-      <Chip color="primary" label={data.tags[2].name} />
+      <div className="chips">
+      {chip} 
+      </div>
+
+
+
+
+
       <div className="share-btn">
         <label>Share</label>{""}
       <EmailShareButton key={"email"} className={"btn"} url={data.url}>
