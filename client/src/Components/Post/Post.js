@@ -22,7 +22,7 @@ import "./styles.css";
 const Post = (props) => {
   const data = props.location.state;
   const content = data.content;
-  const namespace = "blog";
+  // const namespace = "blog";
   console.log(props);
   const chip = data.tags.map((tag) =>
   <div key={tag.id}>
