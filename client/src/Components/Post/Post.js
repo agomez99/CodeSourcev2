@@ -3,7 +3,7 @@ import moment from "moment";
 import { Link } from "react-router-dom";
 import Disqus from "../Disqus/Disqus";
 import Chip from "@material-ui/core/Chip";
-import { Provider, LikeButton } from '@lyket/react';
+import { LikeButton } from '@lyket/react';
 
 import {
   EmailShareButton,
@@ -56,17 +56,6 @@ const Post = (props) => {
       </RedditShareButton>
       </div>
       <hr/>
-
-      <Provider
-  apiKey="acc0dbccce8e557db5ebbe6d605aaa"
-  theme={{
-    colors: {
-      background: "#b8fff3",
-      text: "violet",
-      primary: "rgba(255, 224, 138, 0.4)"
-    }
-  }}
->
       {data.title}
       <LikeButton
                 component={LikeButton.templates.Twitter}
@@ -74,9 +63,7 @@ const Post = (props) => {
                 namespace= {props.location.state.slug}
               />
       {content}
-      
-      </Provider>
-      <div className="author">
+            <div className="author">
         <img
           src={data.author.profile_image}
           alt="Author"
