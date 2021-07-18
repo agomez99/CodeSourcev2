@@ -3,7 +3,7 @@ import moment from "moment";
 import { Link } from "react-router-dom";
 import Disqus from "../Disqus/Disqus";
 import Chip from "@material-ui/core/Chip";
-import { LikeButton } from '@lyket/react';
+import { Provider, LikeButton } from '@lyket/react';
 
 import {
   EmailShareButton,
@@ -22,7 +22,8 @@ import "./styles.css";
 const Post = (props) => {
   const data = props.location.state;
   const content = data.content;
-
+  const namespace = "blog";
+  console.log(props);
   const chip = data.tags.map((tag) =>
   <div key={tag.id}>
     <Chip color="primary" label={tag.name} />
@@ -55,13 +56,26 @@ const Post = (props) => {
       </RedditShareButton>
       </div>
       <hr/>
+
+      <Provider
+  apiKey="acc0dbccce8e557db5ebbe6d605aaa"
+  theme={{
+    colors: {
+      background: "#b8fff3",
+      text: "violet",
+      primary: "rgba(255, 224, 138, 0.4)"
+    }
+  }}
+>
       {data.title}
       <LikeButton
                 component={LikeButton.templates.Twitter}
-                id={props.id}
-                namespace="blogpost"
+                id="how-to-beat-me-at-chess"
+                namespace= {props.location.state.slug}
               />
       {content}
+      
+      </Provider>
       <div className="author">
         <img
           src={data.author.profile_image}
