@@ -9,7 +9,6 @@
   "scripts": {
     "test:debug": "react-scripts --inspect-brk test --runInBand --no-cache",
     "build": "react-scripts build",
-    "now-build": "react-scripts build && mv build dist",
     "client-install": "npm install --prefix client",
     "start": "node server.js",
     "client": "npm start --prefix client",
