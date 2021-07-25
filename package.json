@@ -9,6 +9,7 @@
   },
   "scripts": {
     "test:debug": "react-scripts --inspect-brk test --runInBand --no-cache",
+    "now-build": "react-scripts build && mv build dist",
     "client-install": "npm install --prefix client",
     "start": "node server.js",
     "client": "npm start --prefix client",
@@ -32,7 +33,7 @@
     "express": "^4.17.1",
     "express-validator": "^6.4.1",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.9.12",
+    "mongoose": "^5.13.3",
     "nodemon": "^2.0.3"
   },
   "devDependencies": {
