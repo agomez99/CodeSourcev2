@@ -8,6 +8,7 @@
   },
   "scripts": {
     "test:debug": "react-scripts --inspect-brk test --runInBand --no-cache",
+    "build": "react-scripts build",
     "now-build": "react-scripts build && mv build dist",
     "client-install": "npm install --prefix client",
     "start": "node server.js",
@@ -19,7 +20,7 @@
     "type": "git",
     "url": "git+https://github.com/agomez99/CodeSource.git"
   },
-  "author": "Austine Gomez, Jio Martinez",
+  "author": "Austine Gomez",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/agomez99/CodeSource/issues"
