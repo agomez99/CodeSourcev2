@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import Disqus from "disqus-react"
 
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default class extends Component {
   render() {
     const disqusShortname = "codesource-1"

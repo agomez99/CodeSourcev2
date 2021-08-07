@@ -15,9 +15,10 @@ const useStyles = makeStyles((theme) => ({
   },
 
   button: {
-    padding: 5,
+    padding: 20,
     margin: 5,
-    backgroundColor: "#D3D3D3",
+    backgroundColor: "white",
+    borderRadius:"50%"
   },
   avatar: {
     height: 200,
@@ -30,16 +31,16 @@ const useStyles = makeStyles((theme) => ({
     padding: "10px",
   },
   email: {
-    height: 50,
-    width: 50,
+    height:30,
+    width: 30,
   },
   grid: {
     display: "block",
   },
   info: {
     display: "block",
-    marginLeft: "33%",
-    marginRight: "33%",
+    textAlign:"center",
+
   },
   btngroup: {
     display: "block",
@@ -72,14 +73,14 @@ export default function CenteredGrid() {
                   className={classes.button}
                   href="https://www.linkedin.com/in/austine-gomez/"
                 >
-                  <Linkedin className={classes.icon} /> Linkedin
+                  <Linkedin className={classes.icon} /> 
                 </Button>
                 <Button
                   variant="outlined"
                   className={classes.button}
                   href="https://twitter.com/austine_gomez"
                 >
-                  <Twitter className={classes.icon} /> Twitter
+                  <Twitter className={classes.icon} /> 
                 </Button>
 
                 <Button
@@ -87,7 +88,7 @@ export default function CenteredGrid() {
                   className={classes.button}
                   href="mailto:@agdevelope@gmail.com"
                 >
-                  <EmailIcon className={classes.email}></EmailIcon>
+                  <EmailIcon className={classes.email}/>
                 </Button>
               </div>
             </div>
