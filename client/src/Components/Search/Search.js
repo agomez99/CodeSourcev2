@@ -19,7 +19,7 @@ import './style.css';
 
 require("dotenv").config();
 
-const API_KEY = process.env.REACT_APP_API_KEY
+const API_KEY = "AIzaSyB-E-tb87_EUmc_AJB_2dwXwZlUTe8CIcc" //process.env.REACT_APP_API_KEY;
 
 class Search extends Component  {
   

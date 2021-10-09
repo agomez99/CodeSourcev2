@@ -21,12 +21,11 @@ import "./styles.css";
 
 const Post = (props) => {
   const data = props.location.state;
-  const content = data.content;
   // const namespace = "blog";
   console.log(props);
   const chip = data.tags.map((tag) =>
   <div key={tag.id}>
-    <Chip color="primary" label={tag.name} />
+    <Chip color="primary" label={tag.name} style={{marginBottom:"5px"}}/>
   </div>
 );
   return (
@@ -56,25 +55,25 @@ const Post = (props) => {
       </RedditShareButton>
       </div>
       <hr/>
-      {data.title}
+      Give me a like!!
       <LikeButton
                 component={LikeButton.templates.Twitter}
-                id="how-to-beat-me-at-chess"
+                id={props.match.params.slug}
                 namespace= {props.location.state.slug}
               />
-      {content}
+               
             <div className="author">
         <img
           src={data.author.profile_image}
           alt="Author"
           className="author-image"
         />
-        <div>
+        <div >
           Published by{" "}
           <strong>
             {data.author.first_name} {data.author.last_name}
           </strong>
-          <p>{data.author.linkedin_url}</p> on{" "}
+         <br></br>on
           {moment(data.published).format("MMMM Do, YYYY")}
         </div>
       </div>
