@@ -22,6 +22,7 @@ const Blog = () => {
     if (!data) return null;
     return (
       <div>
+      <p>Posts by Date</p>
         {data.data.map((post, i) => (
           <PostSnippet {...post} key={i} />
         ))}
@@ -35,7 +36,7 @@ const Blog = () => {
     if (!data) return null;
     return (
       <div>
-        <p>Reverse</p>
+        <p>Post by latest date</p>
         {data.data
           .slice(0)
           .reverse()
@@ -69,12 +70,10 @@ const Blog = () => {
     if (!data) return null;
     return (
       <div>
-        <p>REACT </p>
+        <p>Includes "CSS" </p>
         {data.data
           .filter((post) => post.tags[2].name === "CSS" || post.tags[1].name === "CSS" || post.tags[0].name.includes("CSS") )
           //.filter((post) => post.tags[0].name.includes("REACTJS") )
-
-
           .map((post, i) => (
             <PostSnippet {...post} key={i} />
           ))}
@@ -106,7 +105,7 @@ const Blog = () => {
       <Container>
         <div>
           <div
-            style={{ display: "block", float: "center", marginLeft: "100px" }}
+            style={{ display: "block", margin: "auto", width: "100%" }} 
           >
             <h1 className="blog-header">Blog Posts</h1>
             <Tabs>
