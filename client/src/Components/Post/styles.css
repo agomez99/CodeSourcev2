@@ -24,13 +24,17 @@
 }
 img{
     width: 100%;
+    min-width: 50%;
     height: auto;
 }
 
 .author-image {
+    width:100px;
+    min-width: 10%;
     height: 100px;
-    width: 90px;
+
 }
+
 
 .author {
     text-align: center;
@@ -40,7 +44,8 @@ img{
 
 .p-image {
     max-height: 200px;
-    max-width:100%;
+    max-width:300px;
+    min-width: 100px;
     min-height: 200px;
     display: block;
     float: left;
@@ -112,6 +117,12 @@ img{
         margin-right: auto;
 
     }
+
+    img{
+        width:100%;
+        height:auto;
+    }
+
 
 }
 
