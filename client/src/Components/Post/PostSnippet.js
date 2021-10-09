@@ -7,8 +7,8 @@ import "../../App.css";
 const PostSnippet = (props) => {
   const data = props;
 
-  const chip = data.tags.map((tag) => (
-    <div key={tag.id}>
+  const chip = data.tags.map((tag, index) => (
+    <div key={index}>
       <Chip color="primary" label={tag.name} />
     </div>
   ));

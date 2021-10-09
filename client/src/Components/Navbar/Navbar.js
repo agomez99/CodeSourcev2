@@ -83,7 +83,7 @@ const MainNavbar = () => {
     <div>
       <AppBar position="static" className="app-bar">
         <Toolbar>
-          <Link href="/">
+          <Link to="/">
           <img src={image2} alt="" className="logo" />
           </Link>
           <Typography variant="h4" className={classes.title}>
