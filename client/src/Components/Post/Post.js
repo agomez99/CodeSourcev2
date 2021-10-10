@@ -28,6 +28,8 @@ const Post = (props) => {
       <Chip color="secondary" label={tag.name} style={{ marginBottom: "5px" }} />
     </div>
   ));
+
+  const url = "https://code-sourcev2.vercel.app/" + props.location.pathname;
   return (
     <div>
       <div className="post">
@@ -40,19 +42,19 @@ const Post = (props) => {
         <div className="share-btn">
           <label>Share</label>
           {""}
-          <EmailShareButton key={"email"} className={"btn"} url={data.url}>
+          <EmailShareButton key={"email"} className={"btn"} url={url}>
             <EmailIcon round size={50} />
           </EmailShareButton>
-          <FacebookShareButton key={"fb"} className={"btn"} url={data.url}>
+          <FacebookShareButton key={"fb"} className={"btn"} url={url}>
             <FacebookIcon round size={50} />
           </FacebookShareButton>
-          <LinkedinShareButton key={"linked"} className={"btn"} url={data.url}>
+          <LinkedinShareButton key={"linked"} className={"btn"} url={url}>
             <LinkedinIcon round size={50} />
           </LinkedinShareButton>
-          <TwitterShareButton key={"twitter"} className={"btn"} url={data.url}>
+          <TwitterShareButton key={"twitter"} className={"btn"} url={url}>
             <TwitterIcon round size={50} />
           </TwitterShareButton>
-          <RedditShareButton key={"reddit"} className={"btn"} url={data.url}>
+          <RedditShareButton key={"reddit"} className={"btn"} url={url}>
             <RedditIcon round size={50} />
           </RedditShareButton>
         </div>
