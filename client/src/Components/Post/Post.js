@@ -42,10 +42,10 @@ const Post = (props) => {
         <div className="share-btn">
           <label>Share</label>
           {""}
-          <EmailShareButton key={"email"} className={"btn"} url={url}>
+          <EmailShareButton key={"email"} className={"btn"} url={url} >
             <EmailIcon round size={50} />
           </EmailShareButton>
-          <FacebookShareButton key={"fb"} className={"btn"} url={url}>
+          <FacebookShareButton key={"fb"} className={"btn"} url={url} image={"https://cdn.buttercms.com/BLxk41bDTNqL27Aw2iAW"} >
             <FacebookIcon round size={50} />
           </FacebookShareButton>
           <LinkedinShareButton key={"linked"} className={"btn"} url={url}>
