@@ -9,7 +9,7 @@ const PostSnippet = (props) => {
 
   const chip = data.tags.map((tag, index) => (
     <div key={index}>
-      <Chip color="primary" label={tag.name} />
+      <Chip color="secondary" label={tag.name} style={{ marginBottom: "5px" }} />
     </div>
   ));
   return (
