@@ -7,8 +7,7 @@ CodeSource
 <br>
 
 <p align="center">
-Deployment:
-https://codesource2.herokuapp.com/
+https://code-sourcev2.vercel.app/
 </p>
 
 
